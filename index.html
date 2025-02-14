@@ -191,12 +191,198 @@
   <!-- Header -->
   <header>
     <h1>Dreamycam</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamycam - Stylish Edition</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #ff4f8a;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff4f8a;
+    }
+    .contact-btn {
+      background-color: #ff4f8a;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .contact-btn:hover {
+      background-color: #d93f75;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Dreamycam - Stylish Edition</title>
+      <style>
+        /* Reset styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f9f9f9;
+          color: #333;
+          overflow-x: hidden;
+        }
+    
+        /* Stylish Contact Button */
+        .contact-btn {
+          background-color: #ff4f8a;
+          color: #fff;
+          padding: 0.75rem 1.5rem;
+          border-radius: 6px;
+          font-size: 1rem;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        .contact-btn:hover {
+          background-color: #d93f75;
+        }
+    
+        /* Contact Modal */
+        .contact-modal {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+        .contact-modal h2 {
+          color: #ff4f8a;
+          margin-bottom: 1rem;
+        }
+        .contact-modal p {
+          font-size: 1.1rem;
+          margin: 0.5rem 0;
+        }
+        .contact-modal a {
+          color: #ff4f8a;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .contact-modal a:hover {
+          text-decoration: underline;
+        }
+        .close-btn {
+          background: #ff4f8a;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          cursor: pointer;
+          margin-top: 1rem;
+        }
+    
+        /* Show Modal */
+        .show {
+          display: block;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Header -->
+      <header>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <button class="contact-btn" onclick="openContact()">Contact</button>
+          <a href="#">About</a>
+        </nav>
+      </header>
+    
+      <!-- Contact Modal -->
+      <div id="contactModal" class="contact-modal">
+        <h2>Contact Us</h2>
+        <p>WhatsApp: <a href="https://wa.me/212657067674" target="_blank">+212 657-067674</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/dreamy__cam" target="_blank">@dreamy__cam</a></p>
+        <p>TikTok: <a href="https://www.tiktok.com/@dreamy_cam" target="_blank">@dreamy_cam</a></p>
+        <button class="close-btn" onclick="closeContact()">Close</button>
+      </div>
+    
+      <script>
+        function openContact() {
+          document.getElementById("contactModal").classList.add("show");
+        }
+        function closeContact() {
+          document.getElementById("contactModal").classList.remove("show");
+        }
+      </script>
+    
+    </body>
+    </html>
+    
     </nav>
+  </header>
+</body>
+</html>
+
   </header>
 
   <!-- Hero / Banner -->
@@ -206,7 +392,7 @@
       <p>Check out our latest collection of high-quality Digital Cameras. Don’t miss out on these special discounts!</p>
       <button>Shop Now</button>
     </div>
-    <img src="c:\Users\hp\Downloads\DreamyCam.png" alt="Headphones">
+    <img src="c:\Users\hp\Downloads\DreamyCam.png" alt="camera.logo">
   </section>
 
   <!-- Products Section -->
@@ -214,7 +400,7 @@
     <h3>Digital Cameras For You!</h3>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://postimg.cc/4YhCkKtY" alt="Camera 1">
+        <img src="c:\Users\hp\Downloads\pictures\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Samsung Camcorder SMX-F50-Model- SMX-F50 (2011)-Color- Black-Video Resolution- SD (Standard Definition), 720x480 pixels-Digital Zoom- Up to 65x Intelli-Zoom-Storage- SD-SDHC card compatible-Battery Li.jpg" alt="Camera 1">
         <div class="product-info">
           <h4>Samsung Digital Camera</h4>
           <div class="rating">⭐⭐⭐⭐☆</div>
@@ -305,7 +491,110 @@
       </div>
     </div>
   </section>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dreamycam - Stylish Edition</title>
+    <style>
+      /* Previous styles remain unchanged */
+  
+      /* New Shipping Section Styles */
+      .shipping-section {
+        background: linear-gradient(135deg, #ff99cc, #ff4f8a);
+        padding: 2.5rem;
+        margin: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: fadeIn 1s ease-out forwards;
+      }
+  
+      .shipping-text {
+        max-width: 70%;
+      }
+  
+      .shipping-text h2 {
+        font-size: 2.2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+  
+      .shipping-text p {
+        font-size: 1.2rem;
+        color: #fff;
+        opacity: 0.9;
+      }
+  
+      .shipping-logo {
+        width: 120px;
+        height: 120px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        animation: float 3s ease-in-out infinite;
+      }
+  
+      .shipping-logo img {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .shipping-section {
+          flex-direction: column;
+          text-align: center;
+        }
+  
+        .shipping-text {
+          max-width: 100%;
+          margin-bottom: 1.5rem;
+        }
+  
+        .shipping-text h2 {
+          font-size: 1.8rem;
+        }
+  
+        .shipping-text p {
+          font-size: 1rem;
+        }
+  
+        .shipping-logo {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Previous HTML remains unchanged -->
+  
+    <!-- New Shipping Section -->
+    <section class="shipping-section">
+      <div class="shipping-text">
+        <h2>We Offer Free Shipping to All Moroccan Cities!</h2>
+        <p>Fast and reliable delivery. Just contact us for more details.</p>
+      </div>
+      <div class="shipping-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3097/3097137.png" alt="Delivery Logo">
+      </div>
+    </section>
+  
+    <!-- Rest of the HTML remains the same -->
+  
+  </body>
+  </html>
   <!-- Footer -->
   <footer>
     <p>© 2025 Dreamycam. All rights reserved.
@@ -315,3 +604,4 @@
 
 </body>
 </html>
+
