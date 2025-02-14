@@ -15,7 +15,25 @@
       font-family: 'Poppins', sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      overflow-x: hidden;
     }
+
+    /* Animation for entering the website */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header, .hero, .products-section, footer {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
     header {
       background-color: #fff;
       padding: 1rem 2rem;
@@ -25,7 +43,7 @@
       align-items: center;
     }
     header h1 {
-      color: #ff4f8a; /* Stylish pink */
+      color: #ff4f8a;
       font-size: 1.8rem;
       font-weight: bold;
     }
@@ -80,7 +98,7 @@
       background-color: #d93f75;
     }
     .hero img {
-      width: 300px;
+      width: 400px; /* Larger image */
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,8 +120,8 @@
     }
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Larger grid items */
+      gap: 2rem;
     }
     .product-card {
       background-color: #fff;
@@ -120,7 +138,7 @@
     }
     .product-card img {
       width: 100%;
-      height: 180px;
+      height: 250px; /* Increased image height */
       object-fit: cover;
       border-radius: 8px;
     }
@@ -164,6 +182,7 @@
       margin: 2rem 0;
       color: #777;
       font-size: 0.9rem;
+      animation: fadeIn 1s ease-out forwards;
     }
   </style>
 </head>
@@ -183,8 +202,8 @@
   <!-- Hero / Banner -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Grab Up to 30% Off On Your Degital-Camera</h2>
-      <p>Check out our latest collection of high-quality Degital-Cameras. Don’t miss out on these special discounts!</p>
+      <h2>Grab Up to 30% Off On Your Digital Camera</h2>
+      <p>Check out our latest collection of high-quality Digital Cameras. Don’t miss out on these special discounts!</p>
       <button>Shop Now</button>
     </div>
     <img src="c:\Users\hp\Downloads\DreamyCam.png" alt="Headphones">
@@ -192,23 +211,95 @@
 
   <!-- Products Section -->
   <section class="products-section">
-    <h3>Degital-Camera For You!</h3>
+    <h3>Digital Cameras For You!</h3>
     <div class="product-grid">
       <div class="product-card">
-        <img src="c:\Users\hp\Downloads\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Samsung Camcorder SMX-F50-Model- SMX-F50 (2011)-Color- Black-Video Resolution- SD (Standard Definition), 720x480 pixels-Digital Zoom- Up to 65x Intelli-Zoom-Storage- SD-SDHC card compatible-Battery Li.jpg" alt="Headphone 1">
+        <img src="c:\Users\hp\Downloads\pictures\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Samsung Camcorder SMX-F50-Model- SMX-F50 (2011)-Color- Black-Video Resolution- SD (Standard Definition), 720x480 pixels-Digital Zoom- Up to 65x Intelli-Zoom-Storage- SD-SDHC card compatible-Battery Li.jpg" alt="Camera 1">
         <div class="product-info">
-          <h4>Samsung Degital Camera</h4>
+          <h4>Samsung Digital Camera</h4>
           <div class="rating">⭐⭐⭐⭐☆</div>
           <div class="price">439 DH</div>
           <button>Add to Cart</button>
         </div>
       </div>
       <div class="product-card">
-        <img src="c:\Users\hp\Downloads\𝗦𝗢𝗟𝗗 𝗢𝗨𝗧  Canon powershot e1- Condition- 10-10- 10-megapixel- 4x optical zoom lens with image stabilization- 4 battery- Flash and zoom functions work normally- No defects on the LCD screen- Results are super im.jpg" alt="Headphone 2">
+        <img src="path_to_image_2" alt="Camera 2">
         <div class="product-info">
-          <h4>Canon Degital Camera</h4>
+          <h4>Canon Digital Camera</h4>
           <div class="rating">⭐⭐⭐⭐⭐</div>
-          <div class="price">300 DH</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_3" alt="Camera 3">
+        <div class="product-info">
+          <h4>Camera Model 3</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_4" alt="Camera 4">
+        <div class="product-info">
+          <h4>Camera Model 4</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_5" alt="Camera 5">
+        <div class="product-info">
+          <h4>Camera Model 5</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_6" alt="Camera 6">
+        <div class="product-info">
+          <h4>Camera Model 6</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_7" alt="Camera 7">
+        <div class="product-info">
+          <h4>Camera Model 7</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_8" alt="Camera 8">
+        <div class="product-info">
+          <h4>Camera Model 8</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_9" alt="Camera 9">
+        <div class="product-info">
+          <h4>Camera Model 9</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">null DH</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="path_to_image_10" alt="Camera 10">
+        <div class="product-info">
+          <h4>Camera Model 10</h4>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">null DH</div>
           <button>Add to Cart</button>
         </div>
       </div>
@@ -218,7 +309,7 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 Dreamycam. All rights reserved.
-            Dev email : eddaoudi.bilal@dreamycam.com
+            Dev email: eddaoudi.bilal@dreamycam.com
     </p>
   </footer>
 
