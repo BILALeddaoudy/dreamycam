@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https: https://dreamycam.vercel.app/sitemap.xml
