@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #dc3545;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This Website is Under Maintenance</h1>
+        <p>Contact the developer for more information:</p>
+        <p>Email: <a href="mailto:bilal20daoudi04@gmail.com">bilal20daoudi04@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/eddaoudybilal" target="_blank">eddaoudybilal</a></p>
+    </div>
+</body>
+</html>
